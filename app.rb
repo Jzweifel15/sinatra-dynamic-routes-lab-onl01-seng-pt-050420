@@ -33,6 +33,7 @@ class App < Sinatra::Base
     str.push(@word3)
     str.push(@word4)
     str.push(@word5)
+    
     str.join(" ")
     
     
