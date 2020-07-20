@@ -7,7 +7,7 @@ class App < Sinatra::Base
     split_name = @name.split(//)
     reversed_name = []
     split_name.length.times do 
-      
+      reversed_name.push()
     end
   end
   
