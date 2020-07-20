@@ -21,4 +21,8 @@ class App < Sinatra::Base
     str
   end
   
+  get '/say/:number1/:number2/:number3/:number4/:number5' do
+    
+  end
+  
 end
