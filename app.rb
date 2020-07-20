@@ -6,7 +6,7 @@ class App < Sinatra::Base
     @name = param[:name]
     split_name = @name.split(//)
     reversed_name = []
-    
+    split_name.times.
   end
   
 end
