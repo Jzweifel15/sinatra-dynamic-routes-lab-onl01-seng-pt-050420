@@ -5,6 +5,7 @@ class App < Sinatra::Base
   get '/reversename/:name' do
     @name = param[:name]
     split_name = @name.split(//)
+    reversed_name = []
     
   end
   
