@@ -14,7 +14,12 @@ class App < Sinatra::Base
   end
   
   get '/say/:number/:phrase' do 
-    while :number
+    @number = params[:number]
+    @phrase = params[:phrase]
+    while @number do 
+      "#{@phrase}"
+      @number -= 1 
+    end
   end
   
 end
