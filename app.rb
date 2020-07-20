@@ -21,12 +21,21 @@ class App < Sinatra::Base
     str
   end
   
-  get '/say/:number1/:number2/:number3/:number4/:number5' do
-    @number1 = params[:number1].to_i
-    @number2 = params[:number2].to_i
-    @number3 = params[:number3].to_i
-    @number4 = params[:number4].to_i
-    @number5 = params[:number5].to_i
+  get '/say/:word1/:word2/:word3/:word4/:word5' do
+    str = []
+    @word1 = params[:word1]
+    @word2 = params[:word2]
+    @word3 = params[:word3]
+    @word4 = params[:word4]
+    @word5 = params[:word5]
+    str.push(@word1)
+    str.push(@word2)
+    str.push(@word3)
+    str.push(@word4)
+    str.push(@word5)
+    str.join(" ")
+    
+    
   end
   
 end
